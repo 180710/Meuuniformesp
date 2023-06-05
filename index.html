@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Meu Uniforme SP</title>
-</head>
-<body>
-  <h1>Bem-vindo ao Meu Site!</h1>
-  <p>Esta é a página inicial do seu site.</p>
-</body>
-</html>
+<html class="no-js" lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta name="description" content="Sistema Gerencial Web">
+
+  <title>Sistema - Meu Uniforme SP</title>
+  <!-- Favicon-->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/color_skins.css">
+</head>
+
+<body class="theme-black">
+
+  <div class="authentication">
+    <div class="container">
+      <div class="col-md-12 content-center">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="company_detail">
+              <h4 class="logo">
+                <img src="fonts/logo.svg" alt>
+                <title>Su Confecções</title>
+              </h4>
+              <h3>SU CONFECÇÕES</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-12 offset-lg-1">
+            <div class="card-plain">
+              <div class="header">
+                <h5>Acessar conta</h5>
+              </div>
+              <form class="form" action="login.php" method="POST">
+                <div class="input-group">
+                  <input id="loginPessoaSession" type="text" class="form-control" name="username" placeholder="Nome do Usuário" required>
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="zmdi zmdi-account-circle"></i></span>
+                  </div>
+                </div>
+                <div class="input-group">
+                  <input id="senhaPessoaSession" type="password" class="form-control" name="password" placeholder="Senha" required>
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="zmdi zmdi-lock"></i></span>
+                  </div>
+                  <br>
+                </div>
+                <div class="footer">
+                  <button type="submit" class="btn btn-primary btn-round btn-block">Acessar conta</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/libscripts.bundle.js"></script>
+  <script src="js/vendorscripts.bundle.js"></script>
+  <script src="js/jquery.inputmask.bundle.js"></script>
+
+</body>
+
+</html>
