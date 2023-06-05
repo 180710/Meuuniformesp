@@ -1,0 +1,19 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Aqui você pode adicionar a lógica de autenticação
+    // Verificar o nome de usuário e senha no seu sistema
+
+    if ($username === 'admin' && $password === '123456') {
+        // Autenticação bem-sucedida, redirecionar para a página de sucesso
+        header('Location: success.html');
+        exit();
+    } else {
+        // Autenticação falhou, redirecionar para a página de falha
+        header('Location: failure.html');
+        exit();
+    }
+}
+?>
